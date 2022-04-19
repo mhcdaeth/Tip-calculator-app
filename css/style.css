@@ -1,0 +1,225 @@
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --Font-size: 24px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: end;
+  background-color: var(--Light-grayish-cyan);
+  font-family: "Space Mono", monospace;
+}
+body .main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+body .main .top {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+body .main .bottom {
+  background-color: var(--White);
+  border-radius: 30px 30px 0 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+body .main .bottom p {
+  color: var(--White);
+  margin: 0;
+}
+body .main .bottom span {
+  color: var(--Grayish-cyan);
+}
+body .main .bottom .tips, body .main .bottom .reset {
+  cursor: pointer;
+}
+body .main .bottom .section {
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+body .main .bottom .section .inputes {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+}
+body .main .bottom .section .inputes input {
+  width: 95%;
+  height: 60%;
+  border: unset;
+  background-color: var(--Very-light-grayish-cyan);
+  height: 100%;
+}
+body .main .bottom .section .inputes input[type=number] {
+  text-align: right;
+  color: var(--Very-dark-cyan);
+  font-family: "Space Mono", monospace;
+}
+body .main .bottom .section .inputes img {
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+}
+body .main .bottom .section .inputes p {
+  margin: 0;
+  color: var(--Dark-grayish-cyan);
+}
+body .main .bottom .section .inputes .input {
+  position: relative;
+  height: 60%;
+}
+body .main .bottom .section .inputes input:focus {
+  border: unset;
+  border: 3px solid var(--Strong-cyan);
+}
+body .main .bottom .section .inputes .selectTip {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+body .main .bottom .section .inputes .selectTip .button {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  width: 90%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 5px;
+}
+body .main .bottom .section .inputes .selectTip .button:hover {
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+body .main .bottom .section .inputes .selectTip .active {
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+body .main .bottom .section .inputes .selectTip .tips {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  grid-row-gap: 5%;
+  justify-items: start;
+}
+body .main .bottom .section .inputes .selectTip .tips input {
+  width: 90%;
+}
+body .main .bottom .section .inputes .selectTip .tips input::-moz-placeholder {
+  color: var(--Very-dark-cyan);
+  font-size: 24px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+}
+body .main .bottom .section .inputes .selectTip .tips input:-ms-input-placeholder {
+  color: var(--Very-dark-cyan);
+  font-size: 24px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+}
+body .main .bottom .section .inputes .selectTip .tips input::placeholder {
+  color: var(--Very-dark-cyan);
+  font-size: 24px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+}
+body .main .bottom .section .inputes .selectTip .click {
+  background-color: var(--Strong-cyan);
+}
+body .main .bottom .section .inputes .numberOfPeoples {
+  position: relative;
+}
+body .main .bottom .section .inputes .numberOfPeoples span {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  color: red;
+}
+body .main .bottom .section .result {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 15px;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+}
+body .main .bottom .section .result .center {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 35% 35% 30%;
+}
+body .main .bottom .section .result .center .tipAmount {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+}
+body .main .bottom .section .result .center .tipAmount .number {
+  text-align: right;
+  overflow: auto;
+}
+body .main .bottom .section .result .center .tipAmount .number p {
+  color: var(--Strong-cyan);
+  font-size: 24px;
+}
+body .main .bottom .section .result .center .reset {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+body .main .bottom .section .result .center .reset .button {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: var(--Very-dark-cyan);
+  border-radius: 5px;
+  background-color: var(--Strong-cyan);
+  height: 90%;
+}
+body .main .bottom .section .result .center .reset .button:hover {
+  background-color: var(--Light-grayish-cyan);
+}
+body .main .bottom .section .result .center .reset .unactive {
+  background-color: var(--Dark-grayish-cyan);
+}
+
+@media screen and (min-width: 426px) {
+  body .main {
+    align-items: center;
+    justify-items: center;
+  }
+  body .main .bottom {
+    width: 90%;
+    height: 80%;
+    border-radius: 30px;
+  }
+  body .main .bottom .section {
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    height: 90%;
+  }
+  body .main .bottom .section .inputes .selectTip .tips {
+    grid-template-columns: repeat(3, 33.33%);
+  }
+}/*# sourceMappingURL=style.css.map */
